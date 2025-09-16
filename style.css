@@ -1,0 +1,36 @@
+.sponsors-carousel-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  touch-action: pan-y pinch-zoom;
+}
+
+.sponsors-carousel-wrap .sponsors-carousel-inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  touch-action: none;
+  will-change: transform;
+  transform: translateX(0);
+  cursor: grab;
+  user-select: none;
+}
+
+.sponsors-carousel-wrap .sponsors-carousel-inner:active {
+  cursor: grabbing;
+}
+
+.sponsors-carousel-wrap .sponsors-carousel-inner .item {
+  margin-right: 15px;
+  flex: 0 0 auto;
+  width: calc((100% / var(--items-to-show)) - 15px);
+  pointer-events: none;
+}
+
+.sponsors-carousel-wrap .sponsors-carousel-inner .item img {
+  height: var(--image-height);
+  width: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
