@@ -196,4 +196,5 @@ export const data = {
     itemsMobile: "3",
     slider1: "3",
   },
+  elementId: "carousel1",
 };
