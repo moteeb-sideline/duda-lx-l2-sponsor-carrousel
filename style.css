@@ -24,13 +24,11 @@
   margin-right: 15px;
   flex: 0 0 auto;
   width: calc((100% / var(--items-to-show)) - 15px);
-  pointer-events: none;
 }
 
 .sponsors-carousel-wrap .sponsors-carousel-inner .item img {
   height: var(--image-height);
   width: 100%;
   object-fit: contain;
-  pointer-events: none;
   -webkit-user-drag: none;
 }
